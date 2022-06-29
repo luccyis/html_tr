@@ -9,7 +9,12 @@
 			border: 1px solid #A9A9A9;
 			border-collapse: collapse;
 		}
+		table {
+			width: 1000px;
+			margin-left: auto;
+			margin-right: auto;
 		
+		}
 		th, td {
 			padding: 10px;
 			
@@ -19,16 +24,16 @@
 
 <body>
 	<form method="get" action="./result.html" id="form">
-		<h3>♥기본정보</h3>
-		<table width="100%">
+		<h3>♥ 기본정보</h3>
+		<table>
 			<tr>
-				<td width="300px" style="background-color:#B07ECD; color:white;">이름</td>
+				<td width="200px" align="center" style="background-color:#B07ECD; color:white;"> ✔이름</td>
 				<td>
 					<input type="text" name="name" id="name">
 				</td>
 			</tr>
 			<tr>
-				<td style="background-color:#B07ECD; color:white;">아이디</td>
+				<td align="center" style="background-color:#B07ECD; color:white;"> ✔아이디</td>
 				<td>
 					<input type="text" name="id" id="id">
 					<input type="button" id="" value="아이디중복확인" onclick="here();">
@@ -36,7 +41,7 @@
 				</td>
 			</tr>
 			<tr>
-				<td style="background-color:#B07ECD; color:white;">비밀번호</td>
+				<td align="center" style="background-color:#B07ECD; color:white;"> ✔비밀번호</td>
 				<td>
 					<input type="password" name="password" id="password">
 					<br><small style="color:brown;">6~16자가지 영문자(소문자), 숫자 사용 가능합니다.
@@ -44,13 +49,13 @@
 				</td>
 			</tr>
 			<tr>
-				<td style="background-color:#B07ECD; color:white;">비밀번호 확인</td>
+				<td align="center" style="background-color:#B07ECD; color:white;"> ✔비밀번호 확인</td>
 				<td>
 					<input type="password" name="password" id="password">
 				</td>
 			</tr>
 			<tr>
-				<td style="background-color:#B07ECD; color:white;">이메일</td>
+				<td align="center" style="background-color:#B07ECD; color:white;"> ✔이메일</td>
 				<td>
 					<input type="text" name="" id="">@
 					<input type="text" name="" id="">
@@ -62,7 +67,7 @@
 				</td>
 			</tr>
 			<tr>
-				<td style="background-color:#B07ECD; color:white;">연락처</td>
+				<td align="center" style="background-color:#B07ECD; color:white;"> ✔연락처</td>
 				<td>
 					<small>휴대전화</small>
 					<select name="" id="">
@@ -89,21 +94,21 @@
 				</td>
 			</tr>
 			<tr>
-				<td style="background-color:#B07ECD; color:white;">우편번호</td>
+				<td align="center" style="background-color:#B07ECD; color:white;"> ✔우편번호</td>
 				<td>
 					<input type="text" name="" id="">
 					<input type="button" id="" value="주소검색" onclick="here();">
 				</td>
 			</tr>
 			<tr>
-				<td style="background-color:#B07ECD; color:white;">주소</td>
+				<td align="center" style="background-color:#B07ECD; color:white;"> ✔주소</td>
 				<td>
 					<input type="text" name="" id="">
 					<br><input type="text" name="" id="">
 				</td>
 			</tr>
 			<tr>
-				<td style="background-color:#B07ECD; color:white;">정보수신여부</td>
+				<td align="center" style="background-color:#B07ECD; color:white;">정보수신여부</td>
 				<td>
 					<small>서비스 및 이벤트 소식을</small>
 					<input type="checkbox" name="letter">Email로 수신하겠습니다.
@@ -111,36 +116,36 @@
 				</td>
 			</tr>
 		</table>
-		<br><br><h3>♥작가정보</h3>
-		<table width="100%">
+		<br><br><h3>♥ 작가정보</h3>
+		<table>
 			<tr>
-				<td width="300px" style="background-color:#B07ECD; color:white;">프로필이미지</td>
+				<td align="center" width="200px" style="background-color:#B07ECD; color:white;">프로필이미지</td>
 				<td>
 					<input type="file" name="file">
 				</td>
 			</tr>
 			<tr>
-				<td style="background-color:#B07ECD; color:white;">필명</td>
+				<td align="center" style="background-color:#B07ECD; color:white;"> ✔필명</td>
 				<td>
 					<input type="text" name="" id="">
 					<br><small style="color:brown;">필명이 없으신 분들은 실명을 등록해 주시기 바랍니다.(작가정보에 노출 될 이름 입니다.)</small>
 				</td>
 			</tr>
 			<tr>
-				<td style="background-color:#B07ECD; color:white;">대표작</td>
+				<td align="center" style="background-color:#B07ECD; color:white;">대표작</td>
 				<td>
 					<input type="text" name="" id="">
 				</td>
 			</tr>
 			<tr>
-				<td style="background-color:#B07ECD; color:white;">수상내역</td>
+				<td align="center" style="background-color:#B07ECD; color:white;">수상내역</td>
 				<td>
 					<textarea row="100" cols="100" name=""></textarea>
 					<br><small style="color:brown;">여러 수상내역을 등록 시 콤마(,)로 구분하여 등록해 주시기 바랍니다.</small>
 				</td>
 			</tr>
 			<tr>
-				<td style="background-color:#B07ECD; color:white;">주요작품</td>
+				<td align="center" style="background-color:#B07ECD; color:white;">주요작품</td>
 				<td>
 						<input type="text" name="" id="" placeholder="스토리 제목을 입력하세요">
 						<input type="text" name="" id="" placeholder="해당 스토리의 역할을 입력하세요">
@@ -151,7 +156,7 @@
 				</td>
 			</tr>
 			<tr>
-				<td style="background-color:#B07ECD; color:white;">작가정보공개설정</td>
+				<td align="center" style="background-color:#B07ECD; color:white;">작가정보공개설정</td>
 				<td>
 		 			<input type="radio" name="dataOpn">공개
 			 		<input type="radio" name="dataOpn">비공개
@@ -159,18 +164,20 @@
 			</tr>
 		</table>
 		<br>
-		<input type="button" id="" value="저장" onclick="here();">
-		<input type="button" id="" value="취소" onclick="here();">
-		<br><br><h3>♥스토리 이용자 정보</h3>
-		<table width="100%">
+		<div align="center">
+			<input type="button" style="color:white; background-color:#B07ECD; font-size:1.5em; border: 1px solid #A9A9A9;" value="저장" onclick="here();">
+			<input type="button" style="font-size:1.5em; border:1px solid #A9A9A9;" id="" value="취소" onclick="here();">
+		</div>
+		<br><br><h3>♥ 스토리 이용자 정보</h3>
+		<table>
 			<tr>
-				<td style="background-color:#B07ECD; color:white;">소속(회사)</td>
+				<td width="200px" align="center" style="background-color:#B07ECD; color:white;"> ✔소속(회사)</td>
 				<td>
 					<input type="text" name="" id="">
 				</td>
 			<tr>
 			<tr>
-				<td style="background-color:#B07ECD; color:white;">사업자등록번호</td>
+				<td align="center" style="background-color:#B07ECD; color:white;">사업자등록번호</td>
 				<td>
 					<input type="text" name="" id="">
 					- <input type="text" name="" id="">
@@ -178,14 +185,14 @@
 				</td>
 			<tr>
 			<tr>
-				<td style="background-color:#B07ECD; color:white;">사업자등록증(첨부)</td>
+				<td align="center" style="background-color:#B07ECD; color:white;"> ✔사업자등록증(첨부)</td>
 				<td>
 					<input type="file" name="file">
 					<br><small style="color:brown;">소속(회사)의 사업자등록증을 업로드해주시기바랍니다.(이미지 파일만 업로드 가능/PDF파일 업로드 불가)</small>
 				</td>
 			<tr>
 			<tr>
-				<td style="background-color:#B07ECD; color:white;">분야</td>
+				<td align="center" style="background-color:#B07ECD; color:white;"> ✔분야</td>
 				<td>
 					<input type="radio" name="fild">영화<br>
 					<input type="radio" name="fild">방송<br>
@@ -198,7 +205,7 @@
 				</td>
 			<tr>
 			<tr>
-				<td style="background-color:#B07ECD; color:white;">직종</td>
+				<td align="center" style="background-color:#B07ECD; color:white;"> ✔직종</td>
 				<td>
 					<input type="radio" name="job">제작자
 					<input type="radio" name="job">투자자
@@ -208,7 +215,7 @@
 				</td>
 			<tr>
 			<tr>
-				<td style="background-color:#B07ECD; color:white;">주요 경력</td>
+				<td align="center" style="background-color:#B07ECD; color:white;"> ✔주요 경력</td>
 				<td>
 					<small>주요경력사항을 등록해 주시기 바랍니다.</small>
 					<br><small style="color:brown;">(기간, 사업내용, 담당업무를 입력해 주시기 바랍니다.)</small>
