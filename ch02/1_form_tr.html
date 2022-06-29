@@ -31,7 +31,7 @@
 				<td style="background-color:#B07ECD; color:white;">아이디</td>
 				<td>
 					<input type="text" name="id" id="id">
-					<input type="button" id="idCheck" value="아이디중복확인" onclick="here();">
+					<input type="button" id="" value="아이디중복확인" onclick="here();">
 					<br><small style="color:brown;">6~16자까지 영문자(소문자), 숫자 사용 가능합니다.</small>
 				</td>
 			</tr>
@@ -52,12 +52,12 @@
 			<tr>
 				<td style="background-color:#B07ECD; color:white;">이메일</td>
 				<td>
-					<input type="text" name="email" id="email">@
-					<input type="text" name="emailAdd" id="emailAdd">
+					<input type="text" name="" id="">@
+					<input type="text" name="" id="">
 					<select name="emailAddr" id="">
 						<option value="">메일주소선택
-						<option value="">naver.com
-						<option value="">gmail.com
+						<option value="naver.com">naver.com
+						<option value="gmail.com">gmail.com
 					</select>
 				</td>
 			</tr>
@@ -65,12 +65,12 @@
 				<td style="background-color:#B07ECD; color:white;">연락처</td>
 				<td>
 					<small>휴대전화</small>
-					<select name="phnum1" id="">
+					<select name="" id="">
 						<option value="010">010
 						<option value="011">011
 					</select>
-					-<input type="text" name="phnum2" id="phnum2">
-					-<input type="text" name="phnum3" id="phnum3">
+					-<input type="text" name="" id="">
+					-<input type="text" name="" id="">
 					<br>
 					<small>일반전화</small>
 					<select name="num1" id="">
@@ -78,24 +78,28 @@
 						<option value="02">02
 						<option value="031">031
 						<option value="032">032
+						<option value="033">033
+						<option value="041">041
+						<option value="042">042
+						<option value="043">043
 					</select>
-					-<input type="text" name="num2" id="num2">
-					-<input type="text" name="num3" id="num3">
+					-<input type="text" name="" id="">
+					-<input type="text" name="" id="">
 					<br><small style="color:brown;">연락처는 둘 중 하나만 입력해도 됩니다.</small>
 				</td>
 			</tr>
 			<tr>
 				<td style="background-color:#B07ECD; color:white;">우편번호</td>
 				<td>
-					<input type="text" name="mailnum" id="mailnum">
-					<input type="button" id="adrSrc" value="주소검색" onclick="here();">
+					<input type="text" name="" id="">
+					<input type="button" id="" value="주소검색" onclick="here();">
 				</td>
 			</tr>
 			<tr>
 				<td style="background-color:#B07ECD; color:white;">주소</td>
 				<td>
-					<input type="text" name="addr" id="addr">
-					<br><input type="text" name="addr2" id="addr2">
+					<input type="text" name="" id="">
+					<br><input type="text" name="" id="">
 				</td>
 			</tr>
 			<tr>
@@ -112,37 +116,36 @@
 			<tr>
 				<td width="300px" style="background-color:#B07ECD; color:white;">프로필이미지</td>
 				<td>
-					<input type="button" id="fileUp" value="파일 선택" onclick="here();">
-					<small>선택된 파일 없음</small>
+					<input type="file" name="file">
 				</td>
 			</tr>
 			<tr>
 				<td style="background-color:#B07ECD; color:white;">필명</td>
 				<td>
-					<input type="text" name="athrname" id="athrname">
+					<input type="text" name="" id="">
 					<br><small style="color:brown;">필명이 없으신 분들은 실명을 등록해 주시기 바랍니다.(작가정보에 노출 될 이름 입니다.)</small>
 				</td>
 			</tr>
 			<tr>
 				<td style="background-color:#B07ECD; color:white;">대표작</td>
 				<td>
-					<input type="text" name="works" id="works">
+					<input type="text" name="" id="">
 				</td>
 			</tr>
 			<tr>
 				<td style="background-color:#B07ECD; color:white;">수상내역</td>
 				<td>
-					<textarea row="50" cols="50" name="contents"></textarea>
+					<textarea row="100" cols="100" name=""></textarea>
 					<br><small style="color:brown;">여러 수상내역을 등록 시 콤마(,)로 구분하여 등록해 주시기 바랍니다.</small>
 				</td>
 			</tr>
 			<tr>
 				<td style="background-color:#B07ECD; color:white;">주요작품</td>
 				<td>
-						<input type="text" name="workname" id="workname" placeholder="스토리 제목을 입력하세요">
-						<input type="text" name="story" id="story" placeholder="해당 스토리의 역할을 입력하세요">
-						<input type="button" id="deleteWork" value="삭제" onclick="here();">
-						<br><input type="button" id="plusWk" value="+추가" onclick="here();">
+						<input type="text" name="" id="" placeholder="스토리 제목을 입력하세요">
+						<input type="text" name="" id="" placeholder="해당 스토리의 역할을 입력하세요">
+						<input type="button" id="" value="삭제" onclick="here();">
+						<br><input type="button" id="" value="+추가" onclick="here();">
 					<small style="color:brown;">본인 참여 주요작품의 제목 및 역할에 대해 등록해 주시기 바랍니다.
 					<br>(역할은 메인작가, 공동작가, 보조작가, 각색, 각본 등 본인 역할을 정확히 기재해 주시기 바랍니다.)</small>
 				</td>
@@ -156,28 +159,28 @@
 			</tr>
 		</table>
 		<br>
-		<input type="button" id="savePg" value="저장" onclick="here();">
-		<input type="button" id="dontsv" value="취소" onclick="here();">
+		<input type="button" id="" value="저장" onclick="here();">
+		<input type="button" id="" value="취소" onclick="here();">
 		<br><br><h3>♥스토리 이용자 정보</h3>
 		<table width="100%">
 			<tr>
 				<td style="background-color:#B07ECD; color:white;">소속(회사)</td>
 				<td>
-					<input type="text" name="cmpy" id="cmpy">
+					<input type="text" name="" id="">
 				</td>
 			<tr>
 			<tr>
 				<td style="background-color:#B07ECD; color:white;">사업자등록번호</td>
 				<td>
 					<input type="text" name="" id="">
-					-<input type="text" name="" id="">
-					-<input type="text" name="" id="">
+					- <input type="text" name="" id="">
+					- <input type="text" name="" id="">
 				</td>
 			<tr>
 			<tr>
 				<td style="background-color:#B07ECD; color:white;">사업자등록증(첨부)</td>
 				<td>
-					<input type="button" id="fileSclct" value="파일선택" onclick="here();">
+					<input type="file" name="file">
 					<br><small style="color:brown;">소속(회사)의 사업자등록증을 업로드해주시기바랍니다.(이미지 파일만 업로드 가능/PDF파일 업로드 불가)</small>
 				</td>
 			<tr>
@@ -191,7 +194,7 @@
 					<input type="radio" name="fild">투자/배급<br>
 					<input type="radio" name="fild">캐릭터/애니메이션<br>
 					<input type="radio" name="fild">기타
-					<input type="text" name="etc">
+					<input type="text" name="">
 				</td>
 			<tr>
 			<tr>
@@ -201,7 +204,7 @@
 					<input type="radio" name="job">투자자
 					<input type="radio" name="job">에이전트
 					<input type="radio" name="job">기타
-					<input type="text" name="etc">
+					<input type="text" name="">
 				</td>
 			<tr>
 			<tr>
@@ -209,15 +212,18 @@
 				<td>
 					<small>주요경력사항을 등록해 주시기 바랍니다.</small>
 					<br><small style="color:brown;">(기간, 사업내용, 담당업무를 입력해 주시기 바랍니다.)</small>
-					<br><input type="text" name="">
-					<input type="text" name="">
+					<br><input type="date" name="date">
+					<input type="date" name="date">
 					<input type="text" name="" placeholder="사업내용을 입력해주세요">
 					<input type="text" name="" placeholder="사업내용을 입력해주세요">
-					<input type="button" id="" value="삭제" onclick="here()">
-					<br><input type="button" id="" value="+추가" onclick="here()">
+					<input type="button" value="삭제" onclick="here()">
+					<br><input type="button" value="+추가" onclick="here()">
 				</td>
 			<tr>
 		</table>
+		<br><br>
+		<input type="submit" name="제출">
+		<br><br><br>
 	</form>
 </body>
 </html>
