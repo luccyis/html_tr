@@ -4,10 +4,152 @@
 	<meta charset="uTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>LucY</title>
+	<link href="./css/style.css" rel="stylesheet" type="text/css">
+	
 </head>
 
 <body>
-
+	<form method="get" action="./recruitModForm.html" id="form">
+		<h1>[입사지원서]</h1>
+		<table>
+			<tr>
+				<th>지원분야</th>
+				<td></td>
+				<th>경력구분</th>
+				<td></td>
+				<th>희망연봉</th>
+				<td></td>
+			</tr>
+		
+		
+		</table>
+		<table>
+			<caption> 기본정보</caption>
+			<tr>
+				<th>사진</th>
+				<td>
+					<input type="file" name="">
+				
+				</td>
+			</tr>
+			<tr>
+				<th> ✔이름</th>
+				<td>
+					<input type="text" name="name" id="name" autocomplete="off">
+				</td>
+			</tr>
+			<tr>
+				<th> ✔성별</th>
+				<td>
+					<select name="gender" id="gender">
+						<option value="">선택
+						<option value="남자">남자
+						<option value="여자">여자
+						<option value="기타">기타
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<th> ✔생년월일</th>
+				<td>
+					<input type="date" name="bday" id="bday">
+				</td>
+			</tr>
+			<tr>
+				<th> ✔이메일</th>
+				<td>
+					<input type="text" name="" id="">@
+					<input type="text" name="" id="">
+					<select name="emailAddr" id="">
+						<option value="">메일주소선택
+						<option value="naver.com">naver.com
+						<option value="gmail.com">gmail.com
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<th> ✔핸드폰번호</th>
+				<td>
+					<select name="" id="">
+						<option value="010">010
+						<option value="011">011
+					</select>
+					-<input type="text" name="" id="">
+					-<input type="text" name="" id="">
+				</td>
+			</tr>
+			<tr>
+				<th> ✔우편번호</th>
+				<td>
+					<input type="text" name="postNum" id="postNum">
+					<input type="button" id="" value="주소검색" onclick="here();">
+				</td>
+			</tr>
+			<tr>
+				<th> ✔주소</th>
+				<td>
+					<input type="text" name="addr" id="addr">
+					<br><input type="text" name="daar2" id="addr2">
+				</td>
+			</tr>
+		</table>
+		<table>
+			<caption>학력사항(최신이력이 가장 위로)</caption>
+			<thead>
+				<th>기 간</th>
+				<th>출신학교</th>
+				<th>구 분</th>
+				<th>학 과</th>
+				<th>소재지</th>
+			</thead>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+		<table>
+			<caption></caption>
+		
+		
+		
+		
+		
+		</table>
+		<table>
+			<caption>자기소개서</caption>
+				<tr>
+					<th>지원동기</th>
+					<td>
+						<textarea name=""></textarea>
+					</td>
+				</tr>
+				<tr>
+					<th>경력사항</th>
+					<td>
+						<textarea name=""></textarea>
+					</td>
+				</tr>
+				<tr>
+					<th>입사 후 포부</th>
+					<td>
+						<textarea name=""></textarea>
+					</td>
+				</tr>
+		</table>
+		<div>
+		<button type="submit" id="mod">수정하기</button>
+		<button type="reset">지우기</button>
+		</div>
 
 
 </body>

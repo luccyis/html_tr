@@ -1,0 +1,39 @@
+
+	table, th, td {
+		border: 1px solid #A9A9A9;
+		border-collapse: collapse;
+	}
+	table {
+		width: 1000px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	th, td {
+		padding: 10px;
+	}
+	th {
+		width: 110px;
+		text-align: center;
+		background-color:gray;
+		color: white;
+	}
+	caption {
+		text-align: left;
+	
+	}
+	span {
+		font-size: small;
+		color: brown;
+		
+	}
+	textarea {
+		width: 500px;
+		resize: vertical;
+	}
+	div {
+		display: line-block;
+		text-align: center;
+	}
+	
+	
