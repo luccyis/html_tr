@@ -21,12 +21,9 @@
 	caption {
 		text-align: left;
 		margin-bottom: 5px;
+		font-size: 12pt;
+		font-weight: bolder;
 	
-	}
-	span {
-		font-size: small;
-		color: brown;
-		
 	}
 	textarea {
 		width: 500px;
@@ -35,7 +32,6 @@
 	div {
 		display: line-block;
 		text-align: center;
-		
 	}
 	h1 {
 		text-align: center;
@@ -50,6 +46,7 @@
 	   cursor: pointer;
 	   color: white;
 	   font-size: x-large;
+	   border-radius: 12px;
 	   
 	}
 	@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100&display=swap');
