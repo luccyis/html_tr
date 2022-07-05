@@ -15,7 +15,7 @@
 	}
 	th {
 		
-		background-color: #abc6a8;
+		background-color: #98b0d4;
 		color: white;
 	}
 	caption {
@@ -39,10 +39,10 @@
 	}
 	button {
 	   transform: translate(2.2%);
-	   border: 5px solid #abc6a8;
+	   border: 5px solid #98b0d4;
 	   padding: 3px;
 	   margin-top: 0.6rem;
-	   background-color: #abc6a8;
+	   background-color: #98b0d4;
 	   cursor: pointer;
 	   color: white;
 	   font-size: x-large;

@@ -4,15 +4,20 @@
 	<meta charset="uTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>LucY</title>
-	<style type="text/css"></style>
+	<style type="text/css">
+		tr:nth-child(2n+0){
+			background-color: #d2e3fc;
+		}	
+	</style>
 	<link href="./css/style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-	<form method="get" action="./recruitRegForm.html" target="_blank" id="form">
+	<form method="get" action="./recruitRegForm.html" id="form">
 		<h1>지원자 리스트</h1>
 		<table>
 			<thead>
+				<th></th>
 				<th width="80px">번호</th>
 				<th>이름</th>
 				<th width="80px">성별</th>
@@ -23,6 +28,9 @@
 				<th width="80px">합격여부</th>
 			</thead>
 			<tr onclick="location.href='recruitView.html'" style="cursor:pointer;">
+				<td>
+					<input type="checkbox" name="recruit">
+				</td>
 				<td>1</td>
 				<td><a href="#none">고명지</a></td>
 				<td>여</td>
@@ -33,6 +41,9 @@
 				<td></td>
 			</tr>
 			<tr a onclick="location.href='recruitView2.html'" style="cursor:pointer;">
+				<td>
+					<input type="checkbox" name="recruit">
+				</td>
 				<td>2</td>
 				<td><a href="#none">박지원</a></td>
 				<td>여</td>
@@ -43,6 +54,9 @@
 				<td></td>
 			</tr>
 			<tr onclick="location.href='recruitView3.html'" style="cursor:pointer;">
+				<td>
+					<input type="checkbox" name="recruit">
+				</td>
 				<td>3</td>
 				<td><a href="#none">정재현</a></td>
 				<td>남</td>
@@ -53,6 +67,9 @@
 				<td></td>
 			</tr>
 			<tr onclick="location.href='recruitView4.html'" style="cursor:pointer;">
+				<td>
+					<input type="checkbox" name="recruit">
+				</td>
 				<td>4</td>
 				<td><a href="#none">최재원</a></td>
 				<td>여</td>
@@ -63,6 +80,9 @@
 				<td></td>
 			</tr>
 			<tr onclick="location.href='recruitView5.html'" style="cursor:pointer;">
+				<td>
+					<input type="checkbox" name="recruit">
+				</td>
 				<td>5</td>
 				<td><a href="#none">김도영</a></td>
 				<td>남</td>
@@ -73,6 +93,9 @@
 				<td></td>
 			</tr>
 			<tr onclick="location.href='recruitView6.html'" style="cursor:pointer;">
+				<td>
+					<input type="checkbox" name="recruit">
+				</td>
 				<td>6</td>
 				<td><a href="#none">신희주</a></td>
 				<td>여</td>
