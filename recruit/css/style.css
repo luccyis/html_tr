@@ -15,11 +15,12 @@
 	th {
 		width: 110px;
 		text-align: center;
-		background-color:gray;
+		background-color: #7D95D3;
 		color: white;
 	}
 	caption {
 		text-align: left;
+		margin-bottom: 5px;
 	
 	}
 	span {
@@ -34,6 +35,22 @@
 	div {
 		display: line-block;
 		text-align: center;
+		
 	}
-	
+	h1 {
+		text-align: center;
+		
+	}
+	button {
+	   transform: translate(2.2%);
+	   border: 2px solid #A9A9A9;
+	   padding: 3px;
+	   margin-top: 0.6rem;
+	   background-color: #7D95D3;
+	   
+	}
+	@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100&display=swap');
+	.ng-font {
+			font-family: 'Gothic A1', sans-serif;
+	}
 	

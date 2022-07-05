@@ -8,9 +8,9 @@
 </head>
 
 <body>
-	<form method="get" action="./recruitRegForm.html" id="form">
-	<h1>[입사지원서]</h1>
-	<table>
+	<form method="get" action="./recruitModForm.html" id="recruitMJ">
+		<h1>[입사지원서]</h1>
+		<table>
 			<tr>
 				<th>지원분야</th>
 				<td></td>
@@ -19,20 +19,24 @@
 				<th>희망연봉</th>
 				<td></td>
 			</tr>
-		</table>
+		</table><br>
 		<table>
 			<caption> 기본정보</caption>
 			<tr>
-				<th rowspan="9">
-				</th>
-				<td>
-					<input type="file" name="">
+				<td rowspan="9">
+					<image src="image/usahana.jpeg" width="400px">
 				</td>
 			</tr>
 			<tr>
 				<th> ✔이름</th>
 				<td>
 					<input type="text" name="name" id="name" autocomplete="off" readonly value="고명지">
+				</td>
+			</tr>
+			<tr>
+				<th> ✔영문</th>
+				<td>
+					<input type="text" name="egName" id="egName" autocomplete="off" readonly value="Koh Myung Jee">
 				</td>
 			</tr>
 			<tr>
@@ -56,7 +60,7 @@
 				<th> ✔이메일</th>
 				<td>
 					<input type="text" name="" id="" readonly value="mungjee08">@
-					<input type="text" name="" id="" readonly value="naver.com">
+					<input type="text" name="" id="">
 					<select name="emailAddr" id="">
 						<option value="">메일주소선택
 						<option value="naver.com">naver.com
@@ -71,14 +75,14 @@
 						<option value="010">010
 						<option value="011">011
 					</select>
-					-<input type="text" name="" id="" readonly value="2838">
+					-<input type="text" name="" id="" readonly value='2838'>
 					-<input type="text" name="" id="" readonly value="8611">
 				</td>
 			</tr>
 			<tr>
 				<th> ✔우편번호</th>
 				<td>
-					<input type="text" name="postNum" id="postNum" readonly value="12118">
+					<input type="text" name="postNum" id="postNum">
 					<input type="button" id="" value="주소검색" onclick="here();">
 				</td>
 			</tr>
@@ -89,32 +93,121 @@
 					<br><input type="text" name="daar2" id="addr2">
 				</td>
 			</tr>
+		</table><br>
+		<table>
+			<caption>학력사항(최신이력이 가장 위로)</caption>
+			<thead>
+				<th>기 간</th>
+				<th>출신학교</th>
+				<th>구 분</th>
+				<th>학 과</th>
+				<th>소재지</th>
+			</thead>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
 		</table>
 		<table>
-			<caption style="text-align:left">자기소개서</caption>
-				<tr>
-					<th>지원동기</th>
-					<td>
-						<textarea name=""></textarea>
-					</td>
-				</tr>
-				<tr>
-					<th>경력사항</th>
-					<td>
-						<textarea name=""></textarea>
-					</td>
-				</tr>
-				<tr>
-					<th>입사 후 포부</th>
-					<td>
-						<textarea name=""></textarea>
-					</td>
-				</tr>
+			<caption>교육연수</caption>
+			<thead>
+				<th>연수기간</th>
+				<th>연수기관</th>
+				<th>연수과정 및 내용</th>
+			</thead>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
 		</table>
-		<div>
-		<button type="submit" id="mod">수정하기</button>
-		<button type="reset">지우기</button>
-		</div>
+		<table>
+			<caption>자격사항</caption>
+			<thead>
+				<th>취득일</th>
+				<th>종류 및 등급</th>
+				<th>발행처</th>
+				<th>보유기술 및 수준</th>
+			</thead>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table><br>
+		<table>
+			<caption>경력사항(4대보험 가입경력)</caption>
+			<thead>
+				<th>활동기간</th>
+				<th>기 관</th>
+				<th>담당업무</th>
+				<th>경험 및 습득역량</th>
+			</thead>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table><br>
+		<table>
+			<caption>자기소개서</caption>
+			<tr>
+				<th>지원동기</th>
+				<td>
+					<textarea name="" rows="15px"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<th>장/단점</th>
+				<td>
+					<textarea name="" rows="15px"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<th>경력사항</th>
+				<td>
+					<textarea name="" rows="15px"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<th>입사 후 포부</th>
+				<td>
+					<textarea name="" rows="15px"></textarea>
+				</td>
+			</tr>
+		</table><br>
 	</form>
+	<div>
+		<button type="submit" onClick="location.href='recruitModForm.html'" form="recruiMJ" value="수정하기">수정하기</button>
+	</div>
 </body>
 </html>
