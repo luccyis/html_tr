@@ -8,16 +8,16 @@
 </head>
 
 <body>
-	<form method="get" action="./recruitModForm.html" id="reg">
+	<form method="get" action="./recruitView.html" id="reg">
 		<h1>[입사지원서]</h1>
 		<table>
 			<tr>
 				<th>지원분야</th>
-				<td></td>
+				<td>개발</td>
 				<th>경력구분</th>
-				<td></td>
+				<td>신입</td>
 				<th>희망연봉</th>
-				<td></td>
+				<td>회사내규에 따름</td>
 			</tr>
 		</table><br>
 		<table>
@@ -84,7 +84,7 @@
 				<th> ✔우편번호</th>
 				<td>
 					<input type="text" name="postNum" id="postNum">
-					<input type="button" id="" value="주소검색" onclick="here();">
+					<input type="button" id="addrSrc" value="주소검색" onclick="">
 				</td>
 			</tr>
 			<tr>
@@ -218,31 +218,31 @@
 			<tr>
 				<th>지원동기</th>
 				<td>
-					<textarea name="" rows="15px"></textarea>
+					<textarea name="" rows="15px" placeholder="지원동기"></textarea>
 				</td>
 			</tr>
 			<tr>
 				<th>장/단점</th>
 				<td>
-					<textarea name="" rows="15px"></textarea>
+					<textarea name="" rows="15px" placeholder="장/단점"></textarea>
 				</td>
 			</tr>
 			<tr>
 				<th>경력사항</th>
 				<td>
-					<textarea name="" rows="15px"></textarea>
+					<textarea name="" rows="15px" placeholder="경력사항"></textarea>
 				</td>
 			</tr>
 			<tr>
 				<th>입사 후 포부</th>
 				<td>
-					<textarea name="" rows="15px"></textarea>
+					<textarea name="" rows="15px" placeholder="입사 후 포부"></textarea>
 				</td>
 			</tr>
 		</table>
 		<br>
 		<div>
-			<button type="submit" id="mod">수정하기</button>
+			<button type="submit" id="mod">제출하기</button>
 			<button type="button" id="dltPg" value="삭제" onclick="here();">삭제</button>
 		</div>
 	</form>

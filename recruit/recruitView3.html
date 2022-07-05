@@ -8,92 +8,58 @@
 </head>
 
 <body>
-	<form method="get" action="./recruitRegForm.html" id="form">
+	<form method="get" action="./recruitModForm.html" id="form">
 	<h1>[입사지원서]</h1>
 	<table>
 		<tr>
 			<th>지원분야</th>
-			<td></td>
+			<td>개발</td>
 			<th>경력구분</th>
-			<td></td>
+			<td>신입</td>
 			<th>희망연봉</th>
-			<td></td>
+			<td>회사 내규에 따름</td>
 		</tr>
-	</table>
+	</table><br>
 	<table>
 		<caption> 기본정보</caption>
 		<tr>
-			<td rowspan="9">
+			<td rowspan="9" width="400px">
 				<image src="image/pompompurin.jpeg" width="400px">
 			</td>
 		</tr>
 		<tr>
 			<th> ✔이름</th>
-			<td>
-				<input type="text" name="name" id="name" autocomplete="off" readonly value="정재현">
-			</td>
+			<td>정재현</td>
 		</tr>
 		<tr>
 			<th> ✔영문</th>
-			<td>
-				<input type="text" name="egName" id="egName" autocomplete="off" readonly value="Jeong Jae Hyun">
-			</td>
+			<td>Jeong Jae Hyun</td>
 		</tr>
 		<tr>
 			<th> ✔성별</th>
-			<td>
-				<select name="gender" id="gender">
-					<option value="">선택
-					<option value="남자">남자
-					<option value="여자">여자
-					<option value="기타">기타
-				</select>
-			</td>
+			<td>남</td>
 		</tr>
 		<tr>
 			<th> ✔생년월일</th>
-			<td>
-				<input type="date" name="bday" id="bday">
-			</td>
+			<td>1997.02.14</td>
 		</tr>
 		<tr>
 			<th> ✔이메일</th>
-			<td>
-				<input type="text" name="" id="" readonly value="jeongjh">@
-				<input type="text" name="" id="">
-				<select name="emailAddr" id="">
-					<option value="">메일주소선택
-					<option value="naver.com">naver.com
-					<option value="gmail.com">gmail.com
-				</select>
-			</td>
+			<td>jeongjh@naver.com</td>
 		</tr>
 		<tr>
 			<th> ✔핸드폰번호</th>
-			<td>
-				<select name="" id="">
-					<option value="010">010
-					<option value="011">011
-				</select>
-				-<input type="text" name="" id="" readonly value='2345'>
-				-<input type="text" name="" id="" readonly value="3524">
-			</td>
+			<td>010-2345-3524</td>
 		</tr>
 		<tr>
 			<th> ✔우편번호</th>
-			<td>
-				<input type="text" name="postNum" id="postNum">
-				<input type="button" id="" value="주소검색" onclick="here();">
-			</td>
+			<td></td>
 		</tr>
 		<tr>
 			<th> ✔주소</th>
-			<td>
-				<input type="text" name="addr" id="addr" readonly value="서울특별시 서초구">
-				<br><input type="text" name="daar2" id="addr2">
-			</td>
+			<td>서울특별시 서초구</td>
 		</tr>
-	</table>
+	</table><br>
 	<table>
 		<caption>학력사항(최신이력이 가장 위로)</caption>
 		<thead>
@@ -117,7 +83,7 @@
 			<td></td>
 			<td></td>
 		</tr>
-	</table>
+	</table><br>
 	<table>
 		<caption>교육연수</caption>
 		<thead>
@@ -135,7 +101,7 @@
 			<td></td>
 			<td></td>
 		</tr>
-	</table>
+	</table><br>
 	<table>
 		<caption>자격사항</caption>
 		<thead>
@@ -156,7 +122,7 @@
 			<td></td>
 			<td></td>
 		</tr>
-	</table>
+	</table><br>
 	<table>
 		<caption>경력사항(4대보험 가입경력)</caption>
 		<thead>
@@ -177,32 +143,33 @@
 			<td></td>
 			<td></td>
 		</tr>
-	</table>
+	</table><br>
 	<table>
-		<caption style="text-align:left">자기소개서</caption>
+		<caption>자기소개서</caption>
 		<tr>
 			<th>지원동기</th>
-			<td>
-				<textarea name="" row="100px"></textarea>
-			</td>
+			<td width="700px" height="150px"></td>
 		</tr>
 		<tr>
 			<th>경력사항</th>
-			<td>
-				<textarea name="" row="100px"></textarea>
-			</td>
+			<td width="700px" height="150px"></td>
 		</tr>
 		<tr>
 			<th>입사 후 포부</th>
-			<td>
-				<textarea name="" row="100px"></textarea>
-			</td>
+			<td width="700px" height="150px"></td>
 		</tr>
 	</table>
 	<div>
 		<button type="submit" id="mod">수정하기</button>
-		<button type="reset">지우기</button>
-	</div>
+		<button type="button" onclick="here()" id="dltPg" value="삭제">삭제</button>
+		<button type="submit" onclick="location.href='recruitList.html'" id="back" value="목록으로">목록으로</button>
+	</div><br><br><br>
 	</form>
+	<script type="text/javascript">
+		function here(){
+			confirm("정말 삭제하시겠습니까?");
+			document.getElementById("dltPg").submit();
+		}
+	</script>
 </body>
 </html>
