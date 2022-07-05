@@ -4,11 +4,240 @@
 	<meta charset="uTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>LucY</title>
+	<link href="./css/style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-
-
-
+	<form method="get" action="./recruitView.html" id="recruitMJ">
+		<h1>[입사지원서]</h1>
+		<table>
+			<tr>
+				<th>지원분야</th>
+				<td>개발</td>
+				<th>경력구분</th>
+				<td>신입</td>
+				<th>희망연봉</th>
+				<td>회사 내규에 따름</td>
+			</tr>
+		</table><br>
+		<table>
+			<caption> 기본정보</caption>
+			<tr>
+				<td rowspan="9">
+					<image src="image/usahana.jpeg" width="400px">
+				</td>
+			</tr>
+			<tr>
+				<th> ✔이름</th>
+				<td>
+					<input type="text" name="name" id="name" autocomplete="off" readonly value="고명지">
+				</td>
+			</tr>
+			<tr>
+				<th> ✔영문</th>
+				<td>
+					<input type="text" name="egName" id="egName" autocomplete="off" readonly value="Koh Myung Jee">
+				</td>
+			</tr>
+			<tr>
+				<th> ✔성별</th>
+				<td>
+					<select name="gender" id="gender">
+						<option value="">선택
+						<option value="남자">남자
+						<option value="여자">여자
+						<option value="기타">기타
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<th> ✔생년월일</th>
+				<td>
+					<input type="date" name="bday" id="bday">
+				</td>
+			</tr>
+			<tr>
+				<th> ✔이메일</th>
+				<td>
+					<input type="text" name="" id="" readonly value="mungjee08">@
+					<input type="text" name="" id="">
+					<select name="emailAddr" id="">
+						<option value="">메일주소선택
+						<option value="naver.com">naver.com
+						<option value="gmail.com">gmail.com
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<th> ✔핸드폰번호</th>
+				<td>
+					<select name="" id="">
+						<option value="010">010
+						<option value="011">011
+					</select>
+					-<input type="text" name="" id="" readonly value='2838'>
+					-<input type="text" name="" id="" readonly value="8611">
+				</td>
+			</tr>
+			<tr>
+				<th> ✔우편번호</th>
+				<td>
+					<input type="text" name="postNum" id="postNum" readonly value="12118">
+					<input type="button" id="" value="주소검색" onclick="here();">
+				</td>
+			</tr>
+			<tr>
+				<th> ✔주소</th>
+				<td>
+					<input type="text" name="addr" id="addr" readonly value="경기도 남양주시">
+					<br><input type="text" name="daar2" id="addr2">
+				</td>
+			</tr>
+		</table><br>
+		<table>
+			<caption>학력사항(최신이력이 가장 위로)</caption>
+			<thead>
+				<th>기 간</th>
+				<th>출신학교</th>
+				<th>구 분</th>
+				<th>학 과</th>
+				<th>소재지</th>
+			</thead>
+			<tr>
+				<td>
+					<input type="text" value="2014.03 ~2019.02">
+				</td>
+				<td>
+					<input type="text" value="ㅇㅇ대학교">
+				</td>
+				<td>
+					<input type="text" value="졸업">
+				</td>
+				<td>
+					<input type="text" value="ㅇㅇ과">
+				</td>
+				<td>
+					<input type="text" value="서울">
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+		<table>
+			<caption>교육연수</caption>
+			<thead>
+				<th>연수기간</th>
+				<th>연수기관</th>
+				<th>연수과정 및 내용</th>
+			</thead>
+			<tr>
+				<td>
+					<input type="text" value="2022.06.23 ~ 2022.12.05">
+				</td>
+				<td>
+					<input type="text" value="(주)이젠 아카데미 (서울 강남역 본원) 국가기간전략산업직종 훈련">
+				</td>
+				<td>
+					<textarea cols="5" rows="10"> Open API활용 자바 안드로이드 웹&앱 개발자 :JAVA, JAVASCRIPT,JQUERY,JSP, SPRING,HTML, CSS, GIT, Bootstrap, JSTL AJAX POSTMAN AWS TOMCATM, 등을 공부하여 자바를 이용한 웹 프로그래밍 역량을 키웠습니다."</textarea>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+		<table>
+			<caption>자격사항</caption>
+			<thead>
+				<th>취득일</th>
+				<th>종류 및 등급</th>
+				<th>발행처</th>
+				<th>보유기술 및 수준</th>
+			</thead>
+			<tr>
+				<td>
+					<input type="text" value="2021.08">
+				</td>
+				<td>
+					<input type="text" value="워드프로세서 1급">
+				</td>
+				<td>
+					<input type="text" value="대한상공회의소">
+				</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table><br>
+		<table>
+			<caption>경력사항(4대보험 가입경력)</caption>
+			<thead>
+				<th>활동기간</th>
+				<th>기 관</th>
+				<th>담당업무</th>
+				<th>경험 및 습득역량</th>
+			</thead>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table><br>
+		<table>
+			<caption>자기소개서</caption>
+			<tr>
+				<th>지원동기</th>
+				<td>
+					<textarea name="" rows="15px"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<th>장/단점</th>
+				<td>
+					<textarea name="" rows="15px"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<th>경력사항</th>
+				<td>
+					<textarea name="" rows="15px"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<th>입사 후 포부</th>
+				<td>
+					<textarea name="" rows="15px"></textarea>
+				</td>
+			</tr>
+		</table><br>
+	</form>
+	<div>
+		<button type="submit" onclick="location.href='recruitView.html'" form="recruiMJ" value="제출하기">제출하기</button>
+		<button type="button" onclick="here();" id="dltPg" value="삭제">삭제</button>
+		<button type="button" onclick="location.href='recruitList.html'" id="back" value="목록으로">목록으로</button>
+	</div><br><br><br>
+	<script type="text/javascript">
+	function here(){
+			confirm("정말 삭제하시겠습니까?");
+			document.getElementById("dltPg").submit();
+		}
+	</script>
 </body>
 </html>

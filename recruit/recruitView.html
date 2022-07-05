@@ -13,85 +13,51 @@
 		<table>
 			<tr>
 				<th>지원분야</th>
-				<td></td>
+				<td>개발</td>
 				<th>경력구분</th>
-				<td></td>
+				<td>신입</td>
 				<th>희망연봉</th>
-				<td></td>
+				<td>회사 내규에 따름</td>
 			</tr>
 		</table><br>
 		<table>
 			<caption> 기본정보</caption>
 			<tr>
-				<td rowspan="9">
-					<image src="image/usahana.jpeg" width="400px">
+				<td rowspan="9" width="400px">
+					<image src="image/usahana.jpeg" width="400px" >
 				</td>
 			</tr>
 			<tr>
 				<th> ✔이름</th>
-				<td>
-					<input type="text" name="name" id="name" autocomplete="off" readonly value="고명지">
-				</td>
+				<td>고명지</td>
 			</tr>
 			<tr>
 				<th> ✔영문</th>
-				<td>
-					<input type="text" name="egName" id="egName" autocomplete="off" readonly value="Koh Myung Jee">
-				</td>
+				<td>Koh Myung Jee</td>
 			</tr>
 			<tr>
 				<th> ✔성별</th>
-				<td>
-					<select name="gender" id="gender">
-						<option value="">선택
-						<option value="남자">남자
-						<option value="여자">여자
-						<option value="기타">기타
-					</select>
-				</td>
+				<td>여</td>
 			</tr>
 			<tr>
 				<th> ✔생년월일</th>
-				<td>
-					<input type="date" name="bday" id="bday">
-				</td>
+				<td>1994.06.08</td>
 			</tr>
 			<tr>
 				<th> ✔이메일</th>
-				<td>
-					<input type="text" name="" id="" readonly value="mungjee08">@
-					<input type="text" name="" id="">
-					<select name="emailAddr" id="">
-						<option value="">메일주소선택
-						<option value="naver.com">naver.com
-						<option value="gmail.com">gmail.com
-					</select>
-				</td>
+				<td>mungjee08@naver.com</td>
 			</tr>
 			<tr>
 				<th> ✔핸드폰번호</th>
-				<td>
-					<select name="" id="">
-						<option value="010">010
-						<option value="011">011
-					</select>
-					-<input type="text" name="" id="" readonly value='2838'>
-					-<input type="text" name="" id="" readonly value="8611">
-				</td>
+				<td>010-2838-8611</td>
 			</tr>
 			<tr>
 				<th> ✔우편번호</th>
-				<td>
-					<input type="text" name="postNum" id="postNum">
-					<input type="button" id="" value="주소검색" onclick="here();">
-				</td>
+				<td>12118</td>
 			</tr>
 			<tr>
 				<th> ✔주소</th>
-				<td>
-					<input type="text" name="addr" id="addr" readonly value="경기도 남양주시">
-					<br><input type="text" name="daar2" id="addr2">
-				</td>
+				<td>경기도 남양주시</td>
 			</tr>
 		</table><br>
 		<table>
@@ -104,11 +70,11 @@
 				<th>소재지</th>
 			</thead>
 			<tr>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
+				<td>2014.03 ~ 2019.02</td>
+				<td>ㅇㅇ대학교</td>
+				<td>졸업</td>
+				<td>ㅇㅇ과</td>
+				<td>서울</td>
 			</tr>
 			<tr>
 				<td></td>
@@ -126,9 +92,13 @@
 				<th>연수과정 및 내용</th>
 			</thead>
 			<tr>
-				<td></td>
-				<td></td>
-				<td></td>
+				<td width="200">2022.06.22 ~ 2022.12.05</td>
+				<td width="150px">(주)이젠 아카데미<br>(서울 강남역 본원)<br>국가기간전략산업직종 훈련</td>
+				<td>
+					Open API활용 자바 안드로이드 웹&앱 개발자<br>
+					:JAVA, JAVASCRIPT,JQUERY,JSP, SPRING,HTML, CSS, GIT, Bootstrap, JSTL AJAX POSTMAN AWS TOMCATM,
+					등을 공부하여 자바를 이용한 웹 프로그래밍 역량을 키웠습니다.
+				</td>
 			</tr>
 			<tr>
 				<td></td>
@@ -145,9 +115,9 @@
 				<th>보유기술 및 수준</th>
 			</thead>
 			<tr>
-				<td></td>
-				<td></td>
-				<td></td>
+				<td>2021.08</td>
+				<td>워드프로세서 1급</td>
+				<td>대한상공회의소</td>
 				<td></td>
 			</tr>
 			<tr>
@@ -207,7 +177,16 @@
 		</table><br>
 	</form>
 	<div>
-		<button type="submit" onClick="location.href='recruitModForm.html'" form="recruiMJ" value="수정하기">수정하기</button>
-	</div>
+		<button type="submit" onclick="location.href='recruitModForm.html'" form="recruiMJ" value="수정하기">수정하기</button>
+		<button type="button" onclick="here();" id="dltPg" value="삭제">삭제</button>
+		<button type="submit" onclick="location.href='recruitList.html'" id="back" value="목록으로">목록으로</button>
+	</div><br><br><br>
+	<script type="text/javascript">
+	function here(){
+		confirm("정말 삭제하시겠습니까?");
+		document.getElementById("dltPg").submit();
+	}
+	
+	</script>
 </body>
 </html>
