@@ -57,14 +57,10 @@
 	.ng-font {
 			font-family: 'Noto Sans KR', sans-serif;
 	}
-	body {
-		background-color: #f8fdf6;
-	}
 	a {
     color: black;
     text-decoration: none;
-    transition: 0.3s;
-}
+	}
 	a:hover {
     color: dodgerblue;
     text-decoration: underline;
